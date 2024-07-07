@@ -152,3 +152,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+// downlaod pdf file
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  const downloadButton = document.querySelector('.downloadcv-btn');
+
+  downloadButton.addEventListener('click', function() {
+
+      const link = document.createElement('a');
+
+      link.href = 'cv/ignacio_cv.pdf';
+
+      link.download = 'ignacio_cv.pdf'; 
+      
+      link.click();
+  });
+});

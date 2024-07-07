@@ -475,6 +475,43 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
+.contact-items {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: var(--ff-poppins);
+  margin-bottom: 2rem;
+}
+
+.contact-rows {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: left;
+}
+
+.contact-col h3{
+  margin: 10px 0px;
+}
+
+.contact-col h5{
+  font-size: 1rem;
+  color: #4b4b4b;
+}
+
+.em {
+  text-decoration: underline;
+}
+
+
+.contact-col {
+  width: 50%;
+  float: left;
+  margin-bottom: 2rem;
+}
+
 
 
 
@@ -961,6 +998,28 @@ width: 100%;
   box-shadow: 0px 0px 15px rgb(128, 128, 128);
 }
 
+
+.downloadcv-btn-cont {
+  width: 100%;
+  }
+  
+
+
+.downloadcv-btn {
+  padding: 10px 40px;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: solid 1px red;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.downloadcv-btn:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+}
+
+
 .mapbox {
   position: relative;
   height: 250px;
@@ -1064,11 +1123,19 @@ color: black; }
 
 .footer {
   width: 100%;
+  height: auto;
   display: flex;
   border: solid 2px white;
   padding: 2rem;
   background-color: rgb(255, 255, 255);
   justify-content: center;
+  align-items: center;
+}
+
+.footer-contents {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1093,6 +1160,7 @@ color: black; }
 
   .footer {
     padding: 10px;
+    display: flex;
 }
 
   .footer h3{
@@ -1343,6 +1411,40 @@ color: black; }
 /**
  * responsive larger than 768px screen
  */
+@media screen and (max-width: 600px) {
+
+  .downloadcv-btn-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    .contact-rows {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .contact-col {
+      width: 100%;
+    }
+
+    .footer-contents {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+  
+}
+
+
 
 @media (min-width: 768px) {
 
